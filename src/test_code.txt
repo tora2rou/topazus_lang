@@ -1,0 +1,6 @@
+fn main() -> int{
+    let x:i32 = 0;
+    println!("hello world!");
+
+    x
+}
