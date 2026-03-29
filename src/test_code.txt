@@ -1,6 +1,18 @@
-fn main() -> int{
-    let x:i32 = 0;
-    println!("hello world!");
+(let [fn] fizzbuzz <- [string] [int number] ->
+ (match number{
+    number % 15 == 0 -> "fizzbuzz",
+    number % 5 == 0 -> "buzz",
+    number & 3 == 0 -> "fizz",
+    })
+)
 
-    x
-}
+(let [fn] main <- [int] [void] ->
+    (get [int] (let [int] counter))
+    (loop counter ->
+        (let mut [int] n <- 0)
+        (fizzbuzz n)
+        (+ n 1)
+    )
+)
+
+(main)
